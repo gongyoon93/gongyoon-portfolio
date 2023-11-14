@@ -10,6 +10,7 @@ const Hero = () => {
           <br className="hidden lg:inline-block" />
           오늘도 한 단계 성장하고자 합니다.
         </h1>
+
         {/* <p className="mb-8 leading-relaxed">
           모든 국민은 종교의 자유를 가진다. 모든 국민은 통신의 비밀을 침해받지
           아니한다. 모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한
