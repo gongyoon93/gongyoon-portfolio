@@ -9,7 +9,6 @@ const Layout = ({ children }: WrapperProps) => {
   return (
     <>
       <Header />
-      <h1>레이아웃</h1>
       <div>{children}</div>
       <Footer />
     </>
