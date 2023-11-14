@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "../components/layout";
 import Hero from "../components/home/hero";
-import Animation from "../components/home/animation";
 
 const Home: NextPage = () => {
   return (

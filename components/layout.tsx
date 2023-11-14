@@ -7,11 +7,11 @@ type WrapperProps = {
 
 const Layout = ({ children }: WrapperProps) => {
   return (
-    <>
+    <div className="bg-primary">
       <Header />
       <div>{children}</div>
       <Footer />
-    </>
+    </div>
   );
 };
 

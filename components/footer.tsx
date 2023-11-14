@@ -3,8 +3,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="text-gray-600 body-font">
-        <div className="bg-gray-100">
+      <footer className="body-font">
+        <div className="">
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <Link href="/">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -26,9 +26,9 @@ const Footer = () => {
               <a className="text-gray-500">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -38,9 +38,9 @@ const Footer = () => {
               <a className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -51,9 +51,9 @@ const Footer = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -65,9 +65,9 @@ const Footer = () => {
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
