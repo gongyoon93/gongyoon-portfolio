@@ -11,7 +11,7 @@ export interface ProjectInfo {
     태그: {
       id: string;
       type: string;
-      multi_select: { name: string; color: string }[];
+      multi_select: { id: string; name: string; color: string }[];
     };
   };
   url: string;
