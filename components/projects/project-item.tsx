@@ -30,7 +30,11 @@ const ProjectItem = ({ data }: InfoProps) => {
       <div className="p-4 flex flex-col">
         <h1 className="text-2xl font-bold">{title}</h1>
         <h3 className="mt-4 text-xl">{description}</h3>
-        {url && <a href={url}>URL 바로가기</a>}{" "}
+        {url && (
+          <a target="_blank" href={url}>
+            URL 바로가기
+          </a>
+        )}{" "}
         {/* 링크는 새로운 창이 열리도록 수정  */}
         {start || end ? (
           <p className="my-1 ">
