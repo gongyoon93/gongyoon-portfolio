@@ -10,8 +10,9 @@ const ProjectItem = ({ data }: InfoProps) => {
   const title = data.properties["이름"].title[0]?.plain_text;
   const description = data.properties["설명"].rich_text[0]?.plain_text;
   const tags = data.properties["태그"]?.multi_select;
-  const url = data?.url;
-  //   const github = data.properties.GitHub
+  const notionUrl = data?.url;
+  const url = data.properties["URL"].url;
+  const github = data.properties["GitHub"].rich_text[0]?.href;
   const start = data.properties["날짜"].date?.start?.toString();
   const end = data.properties["날짜"].date?.end?.toString();
 
@@ -28,16 +29,29 @@ const ProjectItem = ({ data }: InfoProps) => {
         quality={100}
       />
       <div className="p-4 flex flex-col">
-        <h1 className="text-2xl font-bold">{title}</h1>
+        <h1 className="text-2xl font-bold">
+          {notionUrl ? (
+            <a className="mg-0.25rem" target="_blank" href={notionUrl}>
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h1>
         <h3 className="mt-4 text-xl">{description}</h3>
+        {/* 링크는 새로운 창이 열리도록 수정  */}
         {url && (
-          <a target="_blank" href={url}>
+          <a className="mt-2" target="_blank" href={url}>
             URL 바로가기
           </a>
-        )}{" "}
-        {/* 링크는 새로운 창이 열리도록 수정  */}
+        )}
+        {github && (
+          <a className="mt-2" target="_blank" href={github}>
+            Github 바로가기
+          </a>
+        )}
         {start || end ? (
-          <p className="my-1 ">
+          <p className="mt-2 ">
             작업기간 : {start} {start && end ? "~" : ""} {end}
           </p>
         ) : (

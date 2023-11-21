@@ -31,7 +31,14 @@ const Header = () => {
               <a className="mr-5 hover:text-gray-900">프로젝트</a>
             </Link>
 
-            <a className="mr-5 hover:text-gray-900">연락하기</a>
+            <a
+              className="mr-5 hover:text-gray-900"
+              onClick={() => {
+                alert("준비중입니다.");
+              }}
+            >
+              연락하기
+            </a>
           </nav>
           <DarkModeToggleButton />
         </div>

@@ -13,6 +13,16 @@ export interface ProjectInfo {
       type: string;
       multi_select: { id: string; name: string; color: string }[];
     };
+    GitHub: {
+      id: string;
+      type: string;
+      rich_text: { href: string }[];
+    };
+    URL: {
+      id: string;
+      type: string;
+      url: string;
+    };
   };
   url: string;
   cover: { type: string; file: { url: string }; external: { url: string } };
