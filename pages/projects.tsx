@@ -59,7 +59,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const results = await res.json();
   const projects = await results.results;
 
-  return { props: { projects } };
+  return { props: { projects }, revalidate: 1 };
   // getStaticProps() 메소드를 사용한다면 revalidate 로 데이터 변경시 갱신가능!
   // revalidate: 1 // 데이터 변경이 있으면 갱신 1초 마다
 };
