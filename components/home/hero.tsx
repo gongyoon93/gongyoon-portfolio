@@ -11,12 +11,10 @@ const Hero = () => {
           오늘도 한 단계 성장하고자 합니다.
         </h1>
 
-        {/* <p className="mb-8 leading-relaxed">
-          모든 국민은 종교의 자유를 가진다. 모든 국민은 통신의 비밀을 침해받지
-          아니한다. 모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한
-          압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을
-          제시하여야 한다.
-        </p> */}
+        <p className="mb-8 leading-relaxed">
+          주도적으로 성장할 수 있는 포인트를 찾으며 <br />
+          새로운 인사이트를 얻을 수 있는 준비가 되어 있습니다.
+        </p>
         <div className="flex justify-center">
           <Link href="/projects">
             <a className="btn-project">프로젝트 보러가기</a>
