@@ -16,10 +16,6 @@ const ProjectItem = ({ data }: InfoProps) => {
   const start = data.properties["날짜"].date?.start?.toString();
   const end = data.properties["날짜"].date?.end?.toString();
 
-  const onClick = () => {
-    return console.log("123");
-  };
-
   return (
     <div className="project-card">
       <Image
@@ -42,7 +38,6 @@ const ProjectItem = ({ data }: InfoProps) => {
             title
           )}
         </h1>
-        <button onClick={onClick}>버튼</button>
         <h3 className="mt-4 text-xl">{description}</h3>
         {/* 링크는 새로운 창이 열리도록 수정  */}
         {url && (
