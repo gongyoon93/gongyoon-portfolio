@@ -20,4 +20,15 @@
 //  removeAllBears: set((state) => ({ bears: 0 })),
 // }))
 
+// export useMemoStore = create<State & Action>((set) => ({
+//     memoList : [],
+//     addMemo : (val) =>
+//      set((prev) => ({
+//       memoList: [...prev.memoList, { content: val, id: new Date().getMillisecond() + val }]
+//       })),
+//     removeMemo : (id) =>
+//      set((prev) => ({
+//       memoList: prev.memoList.filter((memo) => memo.id !== id) })),
+//    }));
+
 // 직관적이고 패키지 사이즈가 작다
