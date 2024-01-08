@@ -11,3 +11,13 @@
 //    함수들을 모아두었다가(sub), 상태 변경이 일어났을 때 등록된 리스너에게 알려준다.(pub)
 //  - 스토어를 생성하는 함수 호출시 클로져를 사용한다. 이런 점으로 변경, 조회, 구독하는 인터페이스를 통해서만 상태를 다룰 수 있고,
 //    실제 상태는 생명주기에 따라 의도하지 않는 변경을 막을 수 있다.
+
+// import { create } from 'zustand'
+
+// const useStore = create((set) => ({
+//  bears: 0,
+//  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+//  removeAllBears: set((state) => ({ bears: 0 })),
+// }))
+
+// 직관적이고 패키지 사이즈가 작다
