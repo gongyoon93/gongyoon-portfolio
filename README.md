@@ -5,3 +5,5 @@
 - Tailwind, next-themes, lottiefiles
 
 https://gongyoon-portfolio.vercel.app/projects
+
+- personal 폴더는 개인 공부 정리
