@@ -8,6 +8,11 @@ export interface ProjectInfo {
       type: string;
       date: { start: Date | null; end: Date | null };
     };
+    타입: {
+      id: string;
+      type: string;
+      rich_text: { plain_text: string }[];
+    };
     태그: {
       id: string;
       type: string;

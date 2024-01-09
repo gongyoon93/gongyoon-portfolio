@@ -13,6 +13,8 @@ const ProjectItem = ({ data }: InfoProps) => {
   const notionUrl = data?.url;
   const url = data.properties["URL"].url;
   const github = data.properties["GitHub"].rich_text[0]?.href;
+  const notionType =
+    data.properties["타입"].rich_text[0]?.plain_text === "Notion";
   const start = data.properties["날짜"].date?.start?.toString();
   const end = data.properties["날짜"].date?.end?.toString();
 
@@ -30,7 +32,7 @@ const ProjectItem = ({ data }: InfoProps) => {
       />
       <div className="p-4 flex flex-col">
         <h1 className="text-2xl font-bold">
-          {notionUrl ? (
+          {notionType && notionUrl ? (
             <a className="mg-0.25rem" target="_blank" href={notionUrl}>
               {title}
             </a>
